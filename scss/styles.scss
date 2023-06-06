@@ -1,0 +1,135 @@
+@import "variables";
+@import "inicio";
+@import "fotos";
+@import "plantel";
+@import "historia";
+@import "contacto";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    background-image: linear-gradient(to right, #00c8ff, #78cfff, #aad7ff, #cee1ff, #e8ecff, #e8ecff, #e8ecff, #e8ecff, #cee1ff, #aad7ff, #78cfff, #00c8ff);
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 70px;
+  }
+  
+  nav, .offcanvas {
+    background-color: #1e293b;
+    
+  }
+
+  
+  .navbar-toggler {
+    border: none;
+    &:hover {
+      color: aqua;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    
+  }
+  
+  @media (max-width: $pantalla-sm) {
+    .navbar-nav > li:hover {
+      background-color: #0dcaf0;
+    }
+  }
+  
+  @media (min-width: $pantalla-sm) {
+    header {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+
+  .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+    .box {
+      figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 110px;
+        }
+      }
+
+      h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+      
+
+      p {
+        color: #efefef;
+        margin-bottom: 10px;
+        font-size: 15px;
+        text-align: justify;
+        
+      }
+    }
+
+    .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      margin-right: 10px;
+      background-color: #0d2033;
+      text-align: center;
+      transition: all 300ms ease;
+
+      &:hover {
+        color: aqua;
+      }
+    }
+  }
+
+  .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+    small {
+      font-size: 15px;
+    }
+  }
+}
+
+@media(max-width: $pantalla-sm) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 20px 0px;
+  }
+}

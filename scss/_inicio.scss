@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .wrp {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  
+  .portada {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/MessiCampeo.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #000;
+  }
+  .portada2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/imagen\ 1.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #000;
+  }
+  .portada3 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/imagen\ 2.webp");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #000;
+  }
+  .portada4 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/penales.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #000;
+  }
+  .contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 11, 0.6);
+  
+    .info {
+      width: 100%;
+      max-width: 750px;
+      text-align: center;
+  
+      h1 {
+        color: #fff;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+      }
+  
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 19px;
+        padding: 10px 25px;
+        color: #fff;
+        background: #4897C3;
+        border-radius: 50px;
+        margin-bottom: 40px;
+        border: 2px solid transparent;
+        transition: all 300ms ease;
+        letter-spacing: 0.5px;
+
+        &:hover {
+          background: transparent;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
+    
+  @media (max-width: $pantalla-sm) {
+    .contenido .info h1 {
+      font-size: 35px;
+    }
+    .background-image {
+      background-size: contain;
+    }
+  }

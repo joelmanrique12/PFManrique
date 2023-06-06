@@ -1,0 +1,51 @@
+@mixin flex-column-centrado {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+$color-primario: #007bff;
+$color-secundario: #6c757d;
+$color-exito: #28a745;
+$color-peligro: #dc3545;
+
+$fuente-principal: 'Arial', sans-serif;
+$fuente-titulo: 'Roboto', sans-serif;
+
+$tamano-fuente: 16px;
+$tamano-padding: 10px;
+$tamano-margen: 20px;
+
+$espaciado-linea: 1.5;
+$espaciado-botones: 5px;
+
+$z-indice-menu: 100;
+$z-indice-modal: 200;
+
+$ancho-contenedor: 960px;
+$ancho-sidebar: 300px;
+$ancho-boton: 120px;
+
+$alto-header: 80px;
+$alto-banner: 200px;
+
+$radio-borde: 4px;
+$radio-borde-redondo: 50%;
+
+$transicion-rapida: all 0.3s ease-in-out;
+$transicion-lenta: all 0.6s ease-in-out;
+
+$pantalla-xxs: 480px;
+$pantalla-xs: 576px;
+$pantalla-sm: 768px;
+$pantalla-md: 992px;
+$pantalla-lg: 1024px;
+$pantalla-xl: 1400px;
+
+$ancho-borde: 1px;
+$altura-imagen: 300px;
