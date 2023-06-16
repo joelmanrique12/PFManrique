@@ -56,7 +56,7 @@ ul {
   font-size: 3em;
 
   span {
-    color: #B70E21;
+    color: blue;
   }
 }
 
@@ -91,17 +91,17 @@ ul {
       background: none;
       outline: 0;
       color: #fff;
-      border-bottom: 1px solid #d63031;
+      border-bottom: 1px solid #30c3d6;
     }
 
     button {
-      background: #B70E21;
+      background: #30c3d6;
       border: 0;
       text-transform: uppercase;
       padding: 1em;
 
       &:hover, &:focus {
-        background: #d63031;
+        background: #30c3d6;
         color: #fff;
         transition: background-color 1s ease-out;
         outline: 0;

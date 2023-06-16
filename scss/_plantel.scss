@@ -4,15 +4,97 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
   }
-  .convocados {
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/scaloni-argentinapng.webp");
-    background-size: cover;
+  .titulo{
+    font-size: 24px;
+    color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  }
+  @media (min-width: $pantalla-xs) {
+    .titulo {
+      font-size: 32px;
+    }
+}
+
+@media (min-width: $pantalla-lg) {
+  .titulo {
+    font-size: 48px;
+  }
+}
+.boton {
+  background-color: aqua;
+}
+.arqueros {
+  background-image: url("../img/dibucopa.webp");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 2px solid #000;
-  opacity: 0.8;
+  width: 100%;
+  height: 700px; 
+  color: aqua;
   
 }
+.defensas {
+  background-image: url("../img/cutilicha.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px; 
+  color: aqua;
+  
+}
+.mediocampo {
+  background-image: url("../img/fideo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px; 
+  color: aqua;
+  
+}
+.delanteros {
+  background-image: url("../img/toro.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px; 
+  color: aqua;
+}
+
+.contenedor-imagen {
+  position: relative;
+  display: inline-block;
+}
+
+.texto-superpuesto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.texto-superpuesto h2,
+.texto-superpuesto p {
+  margin: 0;
+  text-align: center;
+}
+
+.contenedor-imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
 
